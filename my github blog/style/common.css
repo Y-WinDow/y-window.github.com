@@ -1,0 +1,223 @@
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f20{font-size:20px;}
+
+.radius_2px{border-radius:2px;}
+.radius_3px{border-radius:3px;}
+.radius_5px{border-radius:5px;}
+.radius_10px{border-radius:10px;}
+
+.text_l{text-align:left;}
+.text_c{text-align:center;}
+.text_r{text-align:right;}
+
+a{text-decoration:none;color:#0078B6;}
+a:hover{text-decoration:none;}
+a:visited{color:#0078B6;}
+
+.dis_bl{display:block;}
+.dis_no{display:none;}
+.dis_in{display:inline;}
+.dis_inBl{display:inline-block;}
+
+.p_re{
+	position:relative;
+}
+.p_ab{
+	position:absolute;
+}
+.p_fix{
+	position:fixed;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.sonFl>li{
+	float:left;
+}
+.sonFr>li{
+	float:right;
+}
+.cb{
+	clear:both;
+}
+.cf:after{
+	content:'.';
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+/*--------------------------------------------------------------------------*/
+body{
+					background:aliceblue;
+				}
+				.container{
+					
+				}
+				.header{
+					height:80px;
+					background:lightblue;
+				}
+				.header h1{
+					font-family:Arial,Helvetica,sans-serif;
+					font-size:36px;
+					padding:20px 180px;
+				}
+				.content{
+					margin:10px 410px 0 0;
+				}
+				.mainContent{
+					word-break:break-all;
+					margin:0 0 0 180px;
+					font-family:Arial,Helvetica,sans-serif;
+				}
+				.mainContent h1{
+					padding:0 0 0 25px;
+					font-size: 20px;
+					font-weight:bold;
+				}
+				.mainContent h2{
+					font-size: 18px;
+					font-weight:bold;
+				}
+				.mainContent h3{
+					font-size: 14px;
+					font-weight:bold;
+				}
+				.articleInfor{
+					width:94%;
+					height:30px;
+					line-height:30px;
+					border-top:1px dotted #ccc;
+					border-bottom:1px dotted #ccc;
+					color:#ABABAB;
+					margin:5px auto;
+				}
+				.articleInfor li{
+					margin:0 0 0 30px;
+				}
+				.mainContent p{
+					font-size:14px;
+					margin:0 0 0 20px;
+					font-family: "微软雅黑";
+				}
+
+				.cotalogue{
+					width:160px;
+					margin:0 0 0 10px;
+					border:1px solid #ccc;
+					overflow:hidden;
+					min-height:400px;
+					height:auto !important;
+				}
+				.cTitle{
+					padding:10px;
+					font-weight:bold;
+				}
+				.fiTitle{
+					margin:0 0 0 10px;
+				}
+				.seTitle{
+					margin:0 0 0 40px;
+				}
+				.seTitle:before{
+					content:'.';
+					color:black;
+				}
+				
+
+				.rightSide{
+					width:380px;
+					margin:10px 10px 0 -400px;
+					font-family:Arial,Helvetica,sans-serif;
+				}
+				.hostInfor{
+					border:1px solid #ccc;
+					-webkit-box-shadow:0 3px 25px gray;
+					-moz-box-shadow:0 3px 25px gray;
+				}
+				.hostInfor img{
+					width:100px;
+					height:110px;
+					margin:-50px 0 0 0;
+					border:3px solid #0099FF;
+					-webkit-box-shadow:0 3px 15px lightblue;
+					-moz-box-shadow:0 3px 15px lightblue;
+
+				}
+				.hostHeadWrapper{
+					width:360px;
+					margin:0 0 0 10px;
+					border-bottom:1px dotted #ccc;
+				}
+				.name{
+					font-size:18px;
+					font-weight:bold;
+					padding:25px 15px;
+				}
+				.detial{
+					margin:5px 0 10px 10px;
+					line-height:20px;
+				}
+				.itemName{
+					width:80px;
+					height:20px;
+					vertical-align:top;
+				}
+				.labels{
+					margin:15px 0 0 0;
+					font-weight:bold;
+					color:#6699FF;
+				}
+				.labels li{
+					margin:0 0 0 10px
+				}
+				.rightSide h2{
+					color:#3399ff;
+					font-family:"微软雅黑";
+					font-size:18px;
+					font-weight:bold;
+				}
+				.footer{
+					height:100px;
+				}
+				.moods{
+					margin:10px 0 0 0;
+				}
+				.moods p{
+					line-height: 20px;
+					padding:0 0 0 10px;
+				}
+				.mainContent .articleList{
+					border:1px solid #ccc;
+					margin:10px 0 0 20px;
+					padding:10px;
+				}
+				.mainContent .articleList table{
+					margin:5px 0 0 0;
+				}
+				.articleList{
+					margin:10px 0 0 0;
+				}
+				.articleList h2{
+					color:#3399ff;
+					font-family:"微软雅黑";
+					font-size:18px;
+					font-weight:bold;
+				}
+				.articleList table td{
+					height:30px;
+					line-height:30px;
+					padding:0 0 0 10px;
+				}
+				.articleList table tr{
+					border-bottom: 1px dotted #ccc;
+				}
+				.blogTitle{
+					width:400px;
+				}
