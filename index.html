@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>window空间</title>
+			<link href="style/base.css" type="text/css" rel="stylesheet">
+			<link href="style/common.css" type="text/css" rel="stylesheet">
+			<style type="text/css">
+				
+			</style>
+		</head>
+		<body>
+			<div class="container cf">
+				<div class="header">
+					<h1><a href="index.html">Window 的空间</a></h1>
+				</div>
+				<div class="content fl">
+					<ul class="cotalogue fl f14">
+						<!-- the content will be loaded by javascript -->
+						<li class="cTitle f16">目录:</li>
+						<!-- <li><a href="#sd" class="fiTitle">一级标题</a></li>
+						<li><a href="#ds" class="seTitle">二级标题</a></li> -->
+					</ul>
+					<div class="mainContent">
+						<h1>空间简介</h1>
+						<ul class="articleInfor sonFl cf f14">
+							<li>类型：原创</li>
+							<li>作者：window</li>
+							<li>完成时间：2012-09-20 22:00</li>
+						</ul>
+						<p class="f14">
+							yo~欢迎到来，这就是我的GitHub博客主页。。。<br /><br />
+							自学了这么久的前端居然还是个做不出什么厉害的东西小菜实在是感到羞愧无比。。。于是在某滔的推荐下开通了这个GitHub博客（在这里万分感谢某滔的帮助和支持）。<br />第一次写博客，希望跟各位大牛的博客对比之下的这么一大片的空白能敦促自己努力坚持。<br />
+							太空旷神马的不好...先放一点东西上去<br />
+							【持续更新中...】
+						</p>
+						<div class="articleList">
+							<h2>我的文章</h2>
+							<table>
+								<tr>
+									<td class="blogType"><a href="javascript:void(0)">[原创]</a></td>
+									<td class="blogTitle"><a href="weibo.html">微博课程设计</a></td>
+									<td class="blogTime"><a href="javascript:void(0)">2012-09-21</a></td>
+								</tr>
+							</table>
+						</div>
+						<!-- <h2><a name="sd">title1</a></h2>
+						<p>
+							texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+						</p> -->
+						
+					</div>
+				</div>
+				<div class="rightSide fr">
+					<div class="hostInfor">
+						<div class="hostHeadWrapper cf">
+							<img src="images/windowHead.png" alt="hostHead" class="fl radius_2px" />
+							<a class="name dis_bl fl" href="index.html" title="Github ID">Y-WinDow</a>
+						</div>
+						<table class="detial f14">
+							<tbody>
+								<tr>
+									<td class="itemName">姓名：</td>
+									<td>杨文道</td>
+								</tr>
+								<tr>
+									<td class="itemName">英文名：</td>
+									<td>window</td>
+								</tr>
+								<tr>
+									<td class="itemName">职位：</td>
+									<td>华南某农大学生</td>
+								</tr>
+								<tr>
+									<td class="itemName">兴趣爱好：</td>
+									<td>ＤＮ、动漫</td>
+								</tr>
+								<tr>
+									<td class="itemName">个人简介：</td>
+									<td>前端初学者，喜欢各种吸引眼球的东西，选择前端而不是枯燥的后台开发也是出于这个理由，前端功力持续进阶中。。。【缓慢啊缓慢...</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="labels">
+						<h2>我的标签</h2>
+						<ul class="sonFl cf">
+							<li>javascript</li>
+							<li>html</li>
+							<li>css</li>
+							<li>html5</li>
+							<li>css3</li>
+						</ul>
+
+					</div>
+					<div class="moods">
+						<h2>动态心情</h2>
+						<p class="f14">
+							什么都没有写
+						</p>
+					</div>
+					<!-- <div class="articleList">
+						<h2>我的文章</h2>
+						<table>
+							<tr>
+								<td><a href="" class="blogType">[type]</a></td>
+								<td><a href="" class="blogTitle">blog1</a></td>
+							</tr>
+						</table>
+					</div> -->
+				</div>
+
+				<div class="footer cb">
+				</div>
+			</div>
+			<script type="text/javascript" src="js/datas.js"></script>
+			<script type="text/javascript" src="js/globalMethod.js"></script>
+			<script type="text/javascript">
+				function init(){
+					loadBlog(blog);
+					randomLabelSize(getElementsByClassName('labels','div',document)[0].getElementsByTagName('li'));
+				}
+
+				function loadBlog(blog){
+					
+				}
+				function randomLabelSize(labels){
+					var fontSizes=[14,18,20,24];
+					for(var i=0,len=labels.length;i<len;i++){
+						labels[i].style.fontSize=fontSizes[Math.floor(Math.random()*5)]+'px';
+					}
+				}
+				init()
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,145 @@
+	.content{
+		padding:20px 0 0 0;
+	}
+	
+	.rightSide{
+		padding:15px 0 0 0;
+	}
+	
+	.input{
+		width:540px;
+		padding:5px;
+		margin:0 auto;
+	}
+	
+	.forAt{
+		left:35px;
+		top:180px;
+		z-index:-9999;
+		color:lightblue;
+		line-height:25px;
+	}
+	.publicContent{
+		width:525px;
+		height:55px;
+		border:1px solid #cccccc;
+		line-height:18px;
+	}
+	.publicCtrls{
+		width:100%;
+		height:24px;
+		margin:5px 0 0 0;
+	}
+	.publicCtrls li{
+		float:left;
+		height:24px;
+		margin:0 15px;
+		line-height:24px;
+	}
+	.ppChoise{
+		top:25px;
+		left:0;
+		width:100px;
+		height:80px;
+		border:2px solid #cccccc;
+		background:white;
+		z-index:1;
+		display:none;
+	}
+	.replace{
+		width:75px;
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		top:25px;
+		left:12.5px;
+		z-index:-1;
+		border:1px solid #cccccc;
+	}
+	.onePic{
+		display: block;
+		margin:25px auto;
+		opacity: 0;
+		-moz-opacity: 0;
+		filter:alpha(opacity=0);
+		width:75px;
+		height:30px;
+	}
+	.publicCtrls li.publicBtnWrapper{
+		float:right;
+		margin:0 3px 0 0;
+		width:70px;
+		height:28px;
+	}
+	a.publicBtn{
+		width:70px;
+		height:28px;
+		opacity: 0;
+		-moz-opacity: 0;
+		filter:alpha(opacity=0);
+	}
+	.bePub{
+		background:url(../images/btn_send.png) no-repeat;
+	}
+	.inPub{
+		background:url(../images/btn_send.png) no-repeat -70px 0;
+	}
+
+
+	
+	a.tips{
+		width:540px;
+		height:24px;
+		color:#D4A639;
+		line-height:24px;
+		text-align:center;
+		margin:5px auto 0;		
+		border:1px solid #F9F2A7;	
+		background:#FEFFE5;
+	}
+	a.tips:hover{
+		text-decoration:underline;
+		background:#FDFFD2;
+	}
+	/*------------------- message style -----------------------
+
+
+		move to common.css
+
+
+	-----------------------------------------------------------*/
+
+	
+
+	.hostInfor{
+		float:left;
+		margin:10px;
+	}
+	.hostInfor div{
+		float:left;
+	}
+	.hostInfor ul{
+		float:left;
+		margin:5px;
+	}
+	.hostName{
+		font-weight:bold;
+	}
+	
+	.followSuggests{
+		width:178px;
+		background:white;
+		border:1px solid #cccccc;
+		top:140px;left:270px;
+		display:none;
+		z-index:2;
+	}
+	.followSuggests ul li{
+		cursor:pointer;
+		height:16px;
+		padding:5px;
+		line-height:16px;
+	}
+	.followSuggests ul li:hover{
+		background:#e5e5e5;
+	}
