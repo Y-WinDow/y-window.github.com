@@ -220,7 +220,7 @@ body{
 					font-size:18px;
 					font-weight:bold;
 				}
-				.articleList table{
+				.mainContent .articleList table{
 					margin:0 auto;
 				}
 				.articleList table td{
@@ -231,6 +231,6 @@ body{
 				.articleList table tr{
 					border-bottom: 1px dotted #ccc;
 				}
-				.blogTitle{
+				.mainContent .blogTitle{
 					width:600px;
 				}
