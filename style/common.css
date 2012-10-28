@@ -102,11 +102,32 @@ body{
 					margin:0 0 0 30px;
 				}
 				.mainContent p{
+					margin:6px 0 6px 20px;
 					font-size:14px;
-					margin:0 0 0 20px;
 					font-family: "微软雅黑";
+					text-indent:2em;
 				}
-
+				.mainContent .emphasize{
+					color:red;
+				}
+				.mainContent .note{
+					color:#ccc;
+				}
+				.mainContent table{
+					margin:0 0 0 20px;
+					font-size: 14px;
+					border:1px solid #ccc;
+				}
+				.mainContent table thead th{
+					font-weight: bold;
+					font-size: 16px;
+					background:#e5e5e5;
+				}
+				.mainContent table th,.mainContent table td{
+					padding:5px 10px;
+					border:1px solid #ccc;
+				}
+				
 				.cotalogue{
 					width:160px;
 					margin:0 0 0 10px;
@@ -163,6 +184,10 @@ body{
 				.detial{
 					margin:5px 0 10px 10px;
 					line-height:20px;
+					border:none;
+				}
+				.detial td{
+					padding:5px 0 0 0;
 				}
 				.itemName{
 					width:80px;

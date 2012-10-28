@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>图片居中</title>
+			<link href="style/base.css" type="text/css" rel="stylesheet">
+			<link href="style/common.css" type="text/css" rel="stylesheet">
+			<style type="text/css">
+				.wrapper{
+					width:600px;
+					height:500px;
+					line-height:500px;
+					margin:0 auto;
+					color:transparent;
+					border:1px solid #ccc;
+					text-align:center;
+				}
+				.wrapper img{
+					vertical-align:middle;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="container cf">
+				<div class="header">
+					<h1><a href="index.html">Window 的空间</a></h1>
+				</div>
+				<div class="content fl">
+					<ul class="cotalogue fl f14">
+						<!-- the content will be loaded by javascript -->
+						<li class="cTitle f16">目录:</li>
+						<!-- <li><a href="#sd" class="fiTitle">一级标题</a></li>
+						<li><a href="#ds" class="seTitle">二级标题</a></li> -->
+					</ul>
+					<div class="mainContent">
+						<h1>[原创]解决图片上下左右居中的问题</h1>
+						<ul class="articleInfor sonFl cf f14">
+							<li>类型：原创</li>
+							<li>作者：window</li>
+							<li>完成时间：2012-10-28 20:08</li>
+						</ul>
+						<p>
+							一个月写一篇博客，一定要能坚持下来。【悄悄提醒自己<br />
+						</p>
+						<h2><a href="">开篇之前</a></h2>
+						<p>
+							图片左右居中只要在父元素上写上text-align:center;就能解决了。重点图片的上下居中。
+						</p>
+						<p>
+							如果父元素不定高度倒也好办，加上相同的上下padding也能解决。这里主要想讨论下父元素定高的图片上下居中问题。
+						</p>
+						<h2><a href="">vertical-align</a></h2>
+						<p>
+							网上的方法也都是用vertical-align:middle实现的。由于vertical-algin:center;只作用于父元素为td或者th的时候，所以就将父元素设置为display:table-cell;同时设置父元素vertical-align:middle;这样图片就垂直居中了。
+						</p>
+						
+						<p>
+							但是新的问题就出现了。父元素变得跟图片一样宽，也无法左右居中了。而且IE6和IE7并不兼容，它们不支持display:table-cell;。做兼容性处理的hack就不在这里介绍了。
+						</p>
+						<p>
+							这里大家应该想到vertical-align的问题了。为什么只有在td和th的时候有用？如果能在div或者img里面直接使用该多好。
+						</p>
+						<p>
+							那么vertical-align到底怎么用呢？这里google到篇不错的文章<a href="http://www.enet.com.cn/article/2010/0612/A20100612668569.shtml">《CSS属性Vertical Align使用方法》</a>
+						</p>
+						<p>
+							学习完上面链接的文章之后我就想能不能用line-height和vertical-align来实现呢？
+						</p>
+						<h2><a href="">我的想法</a></h2>
+						<p>
+							于是我将line-height设置成为跟父元素的高度一致，再在&lt;img /&gt;上面设置vertical-align:middle;。
+						</p>
+						<p>
+							但是发现没用。原因是没有文字，也就是没有基线。
+						</p>
+						<p>
+							于是在图片前后对称的添加了一些文字:</p>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&lt;img /&gt;·
+						</p>
+						<p>
+							前后加了两个“·”，这时只要将父元素的color属性设置为transparent，让文字变成透明就行了。可是IE7不支持transparent，那就把颜色设为背景色就OK了。如果图片需要标上序号，那就添加的文本也可以是有意义的了，那就能更完美一些......<br />如下：
+						</p>
+						<div class="wrapper">
+							.<img src="images/testpic.png" />.
+						</div>
+						<p>
+							IE6下，如果包含有img元素，则设置的line-height属性将会失效，估计其实是line-height变成了img的高度，暂时不知道如何解决。【轻艹IE6！
+						</p>
+						<p>
+							这也算是一种比较取巧的办法，不完美的地方就是加了一点没有意义的文本还有万恶的IE6。不过如果不想手动加的话也可以写一个简单的js函数来完成。网上似乎并没有这样的想法，所以我就在这里分享一下。
+						</p>
+
+					</div>
+				</div>
+				<div class="rightSide fr">
+					<div class="hostInfor">
+						<div class="hostHeadWrapper cf">
+							<img src="images/windowHead.png" alt="hostHead" class="fl radius_2px" />
+							<a class="name dis_bl fl" href="index.html" title="Github ID">Y-WinDow</a>
+						</div>
+						<table class="detial f14">
+							<tbody>
+								<tr>
+									<td class="itemName">名：</td>
+									<td>window</td>
+								</tr>
+								<tr>
+									<td class="itemName">职位：</td>
+									<td>华南某农大学生</td>
+								</tr>
+								<tr>
+									<td class="itemName">邮箱：</td>
+									<td>windowx2012@gmail.com</td>
+								</tr>
+								<tr>
+									<td class="itemName">兴趣爱好：</td>
+									<td>ＤＮ、动漫</td>
+								</tr>
+								<tr>
+									<td class="itemName">个人简介：</td>
+									<td>前端初学者，喜欢各种吸引眼球的东西，选择前端而不是枯燥的后台开发也是出于这个理由，前端功力持续进阶中。。。</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="labels">
+						<h2>我的标签</h2>
+						<ul class="sonFl cf">
+							<li>javascript</li>
+							<li>html</li>
+							<li>css</li>
+							<li>html5</li>
+							<li>css3</li>
+						</ul>
+
+					</div>
+					<div class="moods">
+						<h2>动态心情</h2>
+						<p class="f14">
+							什么都没有写
+						</p>
+					</div>
+					<div class="articleList">
+						<h2>我的文章</h2>
+						<table>
+							<tr>
+								
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="footer cb">
+				</div>
+			</div>
+			<script type="text/javascript" src="js/datas.js"></script>
+			<script type="text/javascript" src="js/globalMethod.js"></script>
+			<script type="text/javascript">
+				function init(){
+					loadBlog(blog);
+					randomLabelSize(getElementsByClassName('labels','div',document)[0].getElementsByTagName('li'));
+				}
+
+				function loadBlog(blog){
+					
+				}
+				function randomLabelSize(labels){
+					var fontSizes=[14,18,20,24];
+					for(var i=0,len=labels.length;i<len;i++){
+						labels[i].style.fontSize=fontSizes[Math.floor(Math.random()*5)]+'px';
+					}
+				}
+				init()
+			</script>
+		</body>
+	</html>
