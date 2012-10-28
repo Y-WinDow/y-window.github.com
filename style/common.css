@@ -113,20 +113,7 @@ body{
 				.mainContent .note{
 					color:#ccc;
 				}
-				.mainContent table{
-					margin:0 0 0 20px;
-					font-size: 14px;
-					border:1px solid #ccc;
-				}
-				.mainContent table thead th{
-					font-weight: bold;
-					font-size: 16px;
-					background:#e5e5e5;
-				}
-				.mainContent table th,.mainContent table td{
-					padding:5px 10px;
-					border:1px solid #ccc;
-				}
+				
 				
 				.cotalogue{
 					width:160px;
